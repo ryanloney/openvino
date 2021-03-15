@@ -1,0 +1,67 @@
+site_name: OpenVINO Toolkit
+nav:
+  - HOME: "index.md"
+  - INSTALL OPENVINO:
+      - Download Packages:
+          - All images: "install_guides/installing-openvino-images.md"
+          - APT: "install_guides/installing-openvino-apt.md"
+          - PIP: "install_guides/installing-openvino-pip.md"
+          - YUM: "install_guides/installing-openvino-yum.md"
+          - Anaconda: "install_guides/installing-openvino-conda.md"
+          - Docker: "install_guides/installing-openvino-docker-linux.md"
+      - Installation Guides:
+          - Windows: "install_guides/installing-openvino-windows.md"
+          - Linux: "install_guides/installing-openvino-linux.md"
+          - macOS: "install_guides/installing-openvino-macos.md"
+  - GETTING STARTED:
+      - Windows: "get_started/get_started_windows.md"
+      - Linux: "get_started/get_started_linux.md"
+      - macOS: "get_started/get_started_macos.md"
+      - Raspberry Pi: "get_started/get_started_raspbian.md"
+  - NEURAL NETWORKS:
+      - Model Optimizer:
+          - Introduction: "MO_DG/Deep_Learning_Model_Optimizer_DevGuide.md"
+          - Configure: "MO_DG/prepare_model/Config_Model_Optimizer.md"
+          - FAQ: "Model_Optimizer_FAQ.md"
+          - Supported Framework Layers: "MO_DG/prepare_model/Supported_Framework_Layers.md"
+      - TensorFlow:
+          - Convert a TensorFlow Model: MO_DG/prepare_model/convert_model/Convert_Model_From_TensorFlow.md"
+          - TensorFlow Conversion Tutorials:
+              - BERT: "MO_DG/prepare_model/convert_model/tf_specific/Convert_BERT_From_Tensorflow.md"
+              - CRNN: "MO_DG/prepare_model/convert_model/tf_specific/Convert_CRNN_From_Tensorflow.md"
+              - DeepSpeech: "MO_DG/prepare_model/convert_model/tf_specific/Convert_DeepSpeech_From_Tensorflow.md"
+              - EfficientDet: "MO_DG/prepare_model/convert_model/tf_specific/Convert_EfficientDet_Models.md"
+              - FaceNet: "MO_DG/prepare_model/convert_model/tf_specific/Convert_FaceNet_From_Tensorflow.md"
+              - GNMT: "MO_DG/prepare_model/convert_model/tf_specific/Convert_GNMT_From_Tensorflow.md"
+              - lm_1b: "MO_DG/prepare_model/convert_model/tf_specific/Convert_lm_1b_From_Tensorflow.md"
+              - NCF: "MO_DG/prepare_model/convert_model/tf_specific/Convert_NCF_From_TensorFlow.md"
+              - Object Detection API Models: "MO_DG/prepare_model/convert_model/tf_specific/Convert_Object_Detection_API_Models.md"
+              - Slim Library Models: "MO_DG/prepare_model/convert_model/tf_specific/Convert_Slim_Library_Models.md"
+              - Wide and Deep Models: "MO_DG/prepare_model/convert_model/tf_specific/Convert_WideAndDeep_Family_Models.md"
+              - XLNet: "MO_DG/prepare_model/convert_model/tf_specific/Convert_XLNet_From_TensorFlow.md"
+              - YOLO: "MO_DG/prepare_model/convert_model/tf_specific/Convert_YOLO_From_TensorFlow.md"
+          - TensorFlow Importer: ""
+      - Kaldi:
+          - Convert a Kaldi Model: "MO_DG/prepare_model/convert_model/Convert_Model_From_Kaldi.md"
+          - Kaldi Conversion Tutorials:
+              - ASpIRE TDNN: "MO_DG/prepare_model/convert_model/kaldi_specific/Aspire_Tdnn_Model.md"
+      - PyTorch & ONNX:
+          - Convert an ONNX Model: "MO_DG/prepare_model/convert_model/Convert_Model_From_ONNX.md"
+          - Import an ONNX Model: ""
+          - ONNX Conversion Tutorials:
+              - DLRM: "MO_DG/prepare_model/convert_model/onnx_specific/Convert_DLRM.md"
+              - Faster RCNN: "MO_DG/prepare_model/convert_model/onnx_specific/Convert_Faster_RCNN.md"
+              - GPT2: "MO_DG/prepare_model/convert_model/onnx_specific/Convert_GPT2.md"
+              - QuartzNet: "MO_DG/prepare_model/convert_model/onnx_specific/Convert_Quartz_Net.md"
+      - Caffe:
+          - Convert a Caffe Model: "MO_DG/prepare_model/convert_model/Convert_Model_From_Caffe.md"
+      - MXNet:
+          - Convert an MXNet Model: "MO_DG/prepare_model/convert_model/Convert_Model_From_MxNet.md"
+          - MXNet Conversion Tutorials:
+              - GluonCV Models: "MO_DG/prepare_model/convert_model/mxnet_specific/Convert_GluonCV_Models.md"
+              - Style Transfer Models: "MO_DG/prepare_model/convert_model/mxnet_specific/Convert_Style_Transfer_From_MXNet.md"
+      - Operation Sets: "MO_DG/IR_and_opsets.md"
+      - Limitations and Known Issues: "MO_DG/Known_Issues_Limitations.md"
+  - LEGAL:
+      - Legal Notices: "Legal_Information.md"
+theme: readthedocs

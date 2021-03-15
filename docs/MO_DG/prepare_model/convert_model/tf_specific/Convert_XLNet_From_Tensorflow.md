@@ -1,4 +1,4 @@
-# Convert TensorFlow* XLNet Model to the Intermediate Representation {#openvino_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_XLNet_From_Tensorflow}
+# Convert TensorFlow\* XLNet Model to the Intermediate Representation
 
 Pre-trained models for XLNet (Bidirectional Encoder Representations from Transformers) are
 [publicly available](https://github.com/zihangdai/xlnet).
@@ -7,17 +7,18 @@ Pre-trained models for XLNet (Bidirectional Encoder Representations from Transfo
 
 Currently, the following models from the [pre-trained XLNet model list](https://github.com/zihangdai/xlnet#pre-trained-models) are supported:
 
-* **[`XLNet-Large, Cased`](https://storage.googleapis.com/xlnet/released_models/cased_L-24_H-1024_A-16.zip)**
-* **[`XLNet-Base, Cased`](https://storage.googleapis.com/xlnet/released_models/cased_L-12_H-768_A-12.zip)**
+- **[`XLNet-Large, Cased`](https://storage.googleapis.com/xlnet/released_models/cased_L-24_H-1024_A-16.zip)**
+- **[`XLNet-Base, Cased`](https://storage.googleapis.com/xlnet/released_models/cased_L-12_H-768_A-12.zip)**
 
 ## Download the Pre-Trained Base XLNet Model
 
 Download and unzip an archive with the [XLNet-Base, Cased](https://storage.googleapis.com/xlnet/released_models/cased_L-12_H-768_A-12.zip).
 
 After the archive is unzipped, the directory `cased_L-12_H-768_A-12` is created and contains the following files:
-* TensorFlow checkpoint (`xlnet_model.ckpt`) containing the pre-trained weights (which is actually 3 files)
-* sentence piece model (`spiece.model`) used for (de)tokenization 
-* config file (`xlnet_config.json`) which specifies the hyperparameters of the model 
+
+- TensorFlow checkpoint (`xlnet_model.ckpt`) containing the pre-trained weights (which is actually 3 files)
+- sentence piece model (`spiece.model`) used for (de)tokenization
+- config file (`xlnet_config.json`) which specifies the hyperparameters of the model
 
 To get pb-file from the archive contents, you need to do the following.
 
@@ -32,8 +33,6 @@ To get pb-file from the archive contents, you need to do the following.
    unzip cased_L-12_H-768_A-12.zip
    mkdir try_save
 ```
-
-   
 
 2. Save and run the following script:
 
@@ -100,9 +99,9 @@ Download and unzip an archive with the [XLNet-Large, Cased](https://storage.goog
 
 After the archive is unzipped, the directory `cased_L-12_H-1024_A-16` is created and contains the following files:
 
-* TensorFlow checkpoint (`xlnet_model.ckpt`) containing the pre-trained weights (which is actually 3 files)
-* sentence piece model (`spiece.model`) used for (de)tokenization 
-* config file (`xlnet_config.json`) which specifies the hyperparameters of the model 
+- TensorFlow checkpoint (`xlnet_model.ckpt`) containing the pre-trained weights (which is actually 3 files)
+- sentence piece model (`spiece.model`) used for (de)tokenization
+- config file (`xlnet_config.json`) which specifies the hyperparameters of the model
 
 To get pb-file from the archive contents, you need to do the following.
 
@@ -117,8 +116,6 @@ To get pb-file from the archive contents, you need to do the following.
    unzip cased_L-24_H-1024_A-16.zip
    mkdir try_save
 ```
-
-
 
 2. Save and run the following script:
 
@@ -179,12 +176,10 @@ with tf.Session() as sess:
 
 The script should save into `~/XLNet-Large/xlnet`.
 
-
-
 ## Convert frozen TensorFlow XLNet Model to IR
 
 To generate the XLNet Intermediate Representation (IR) of the model, run the Model Optimizer with the following parameters:
+
 ```sh
 python3 mo.py --input_model path-to-model/model_frozen.pb  --input "input_mask[50 1],input_ids[50 1],seg_ids[50 1]" --log_level DEBUG --disable_nhwc_to_nchw
 ```
-
