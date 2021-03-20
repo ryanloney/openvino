@@ -7,13 +7,15 @@ nav:
           - APT: "install_guides/installing-openvino-apt.md"
           - PIP: "install_guides/installing-openvino-pip.md"
           - YUM: "install_guides/installing-openvino-yum.md"
-          - Anaconda: "install_guides/installing-openvino-conda.md"
           - Docker: "install_guides/installing-openvino-docker-linux.md"
       - Installation Guides:
           - Windows: "install_guides/installing-openvino-windows.md"
           - Linux: "install_guides/installing-openvino-linux.md"
           - macOS: "install_guides/installing-openvino-macos.md"
-  - GETTING STARTED:
+  - GET STARTED:
+      - Overview: ""
+      - Importing models: ""
+      - Running Inference: ""
       - Windows: "get_started/get_started_windows.md"
       - Linux: "get_started/get_started_linux.md"
       - macOS: "get_started/get_started_macos.md"
